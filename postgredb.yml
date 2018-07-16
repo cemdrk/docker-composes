@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+   db:
+     image: postgres:10
+     restart: always
+     environment:
+       POSTGRES_PASSWORD: postgrespass
+     ports:
+       - "127.0.0.1:5432:5432"
+     container_name: postgredb
